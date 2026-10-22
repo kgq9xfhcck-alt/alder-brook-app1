@@ -131,17 +131,47 @@
     return p;
   }
 
-  function makeImage(animal) {
+  // Optimised WebP versions made by tools/make-images.py, with the JPEG as the fallback.
+  //  "card":   one 4:3 crop at two sizes, so phones download the smaller file.
+  //  "detail": art direction: a tight square crop on phones, a wider 3:2 crop
+  //            showing more habitat on tablets.
+  function makeImage(animal, kind = "card") {
+    const base = animal.image.replace(/\.jpg$/, "");
+    const picture = document.createElement("picture");
+
+    const addSource = (name, widths, sizes, media) => {
+      const source = document.createElement("source");
+      source.type = "image/webp";
+      source.srcset = widths.map((w) => `${base}-${name}-${w}.webp ${w}w`).join(", ");
+      source.sizes = sizes;
+      if (media) source.media = media;
+      picture.appendChild(source);
+    };
+
     const img = document.createElement("img");
     img.src = animal.image;
     img.alt = animal.alt;
-    img.loading = "lazy";
-    img.width = 800;
-    img.height = 600;
+
+    if (kind === "detail") {
+      addSource("wide", [800, 1200], "50vw", "(min-width: 768px)");
+      addSource("square", [480, 960], "100vw");
+      img.width = 960;
+      img.height = 960;
+      img.fetchPriority = "high";
+    } else {
+      addSource("card", [400, 800], "(min-width: 960px) 33vw, (min-width: 600px) 50vw, 100vw");
+      img.width = 800;
+      img.height = 600;
+      img.loading = "lazy";
+    }
+
     img.addEventListener("error", () => {
+      picture.querySelectorAll("source").forEach((s) => s.remove());
       img.src = "images/placeholder.svg";
     }, { once: true });
-    return img;
+
+    picture.appendChild(img);
+    return picture;
   }
 
   // Photo credit, required by the Creative Commons licences.
@@ -200,7 +230,7 @@
     const body = document.createElement("div");
     body.className = "animal-card__body";
 
-    const heading = document.createElement("h3");
+    const heading = document.createElement("h2");
     const titleLink = document.createElement("a");
     titleLink.href = detailUrl;
     titleLink.textContent = animal.name;
@@ -297,7 +327,7 @@
 
     const figure = document.createElement("figure");
     figure.className = "detail-image";
-    figure.appendChild(makeImage(animal));
+    figure.appendChild(makeImage(animal, "detail"));
     if (animal.credit) figure.appendChild(makeCredit(animal.credit));
 
     const info = document.createElement("div");
@@ -382,7 +412,7 @@
       const H = 600;
       const PAD = 60;
       const TILE = 256;
-      const MAX_ZOOM = 12;
+      const MAX_ZOOM = 17;
 
       // Web Mercator: the pixel position of a coordinate at zoom z, as OpenStreetMap tiles use.
       const toWorld = (lat, lng, z) => {
@@ -436,8 +466,9 @@
             img.setAttribute("href", `https://tile.openstreetmap.org/${zoom}/${wrappedX}/${ty}.png`);
             img.setAttribute("x", String(tx * TILE - originX));
             img.setAttribute("y", String(ty * TILE - originY));
-            img.setAttribute("width", String(TILE));
-            img.setAttribute("height", String(TILE));
+            // Half a pixel of overlap hides hairline seams between tiles.
+            img.setAttribute("width", String(TILE + 0.5));
+            img.setAttribute("height", String(TILE + 0.5));
             group.appendChild(img);
           }
         }

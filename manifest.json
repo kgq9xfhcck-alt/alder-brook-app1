@@ -10,8 +10,40 @@
   "theme_color": "#2f6b3f",
   "lang": "en-GB",
   "icons": [
-    { "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
-    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
-    { "src": "icons/icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+    {
+      "src": "icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icons/icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "id": "./",
+  "screenshots": [
+    {
+      "src": "screenshots/narrow.webp",
+      "sizes": "540x1200",
+      "type": "image/webp",
+      "form_factor": "narrow",
+      "label": "Browse the British animals cared for at Alder Brook"
+    },
+    {
+      "src": "screenshots/wide.webp",
+      "sizes": "1280x800",
+      "type": "image/webp",
+      "form_factor": "wide",
+      "label": "Find each animal's area on the centre map"
+    }
   ]
 }

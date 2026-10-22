@@ -1,6 +1,6 @@
 {
   "updated": "2026-10-22",
-  "note": "Species facts verified against each animal's source link. Locations are where each animal can be seen; map coordinates are the centre of each postcode. Photos are from Wikimedia Commons, credited in each animal's credit field.",
+  "note": "Species facts verified against each animal's source link. Alder Brook is a fictional centre near Liverpool: zone names and map positions are illustrative, placed in Croxteth Country Park. Photos are from Wikimedia Commons, credited in each animal's credit field.",
   "animals": [
     {
       "id": "hedgehog",
@@ -13,9 +13,9 @@
       "status": "Declining",
       "source": "https://bto.org/science/monitoring/hedgehogs",
       "location": {
-        "lat": 53.0548,
-        "lng": -2.1333,
-        "zone": "22 Baddeley Hall Rd, Stoke-on-Trent ST2 7JZ"
+        "lat": 53.4424,
+        "lng": -2.8941,
+        "zone": "Hedgehog Garden"
       },
       "credit": {
         "author": "Jörg Hempel",
@@ -35,9 +35,9 @@
       "status": "Declining",
       "source": "https://woodlandtrust.org.uk/trees-woods-and-wildlife/animals/mammals/red-squirrel",
       "location": {
-        "lat": 54.276,
-        "lng": -2.2634,
-        "zone": "Snaizeholme Rd, Hawes DL8 3NB"
+        "lat": 53.4441,
+        "lng": -2.8905,
+        "zone": "Pine Wood"
       },
       "credit": {
         "author": "Peter Trimming",
@@ -57,9 +57,9 @@
       "status": "Least concern in the UK",
       "source": "https://www.rspb.org.uk/birds-and-wildlife/barn-owl",
       "location": {
-        "lat": 52.7201,
-        "lng": -0.2171,
-        "zone": "Vine House Farm, Deeping St Nicholas, Spalding PE11 3DG"
+        "lat": 53.4405,
+        "lng": -2.888,
+        "zone": "Meadow Barn"
       },
       "credit": {
         "author": "Steven Ward",
@@ -79,9 +79,9 @@
       "status": "Near threatened (IUCN)",
       "source": "https://www.mcsuk.org/30species/eurasian-otter",
       "location": {
-        "lat": 53.6227,
-        "lng": -2.865,
-        "zone": "Burscough, Ormskirk L40 0TA"
+        "lat": 53.4398,
+        "lng": -2.8935,
+        "zone": "River Bank"
       },
       "credit": {
         "author": "Bernard Landgraf",
@@ -101,9 +101,9 @@
       "status": "Least concern",
       "source": "https://kentwildlifetrust.org.uk/wildlife-explorer/mammals/european-badger",
       "location": {
-        "lat": 53.1402,
-        "lng": -2.502,
-        "zone": "Cross Ln, Church Minshull, Nantwich CW5 6DY"
+        "lat": 53.4435,
+        "lng": -2.896,
+        "zone": "Badger Wood"
       },
       "credit": {
         "author": "Charles J. Sharp",
@@ -123,9 +123,9 @@
       "status": "Green-listed in the UK",
       "source": "https://www.rspb.org.uk/birds-and-wildlife/kingfisher",
       "location": {
-        "lat": 53.5379,
-        "lng": -2.0094,
-        "zone": "Chew Valley Rd, Greenfield, Oldham OL3 7AE"
+        "lat": 53.4412,
+        "lng": -2.8912,
+        "zone": "Kingfisher Pond"
       },
       "credit": {
         "author": "Tony Wood",
