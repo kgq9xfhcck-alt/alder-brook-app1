@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Alder Brook Wildlife Centre: rescuing, rehabilitating and caring for British wildlife.">
+  <meta name="theme-color" content="#2f6b3f" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#14291b" media="(prefers-color-scheme: dark)">
+  <link rel="manifest" href="manifest.json">
+  <link rel="icon" href="icons/icon-192.png" sizes="192x192">
+  <link rel="apple-touch-icon" href="icons/icon-192.png">
+  <title>Alder Brook Wildlife Centre</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="home">
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="top-nav" role="banner">
+    <a class="brand" href="index.html">Alder Brook</a>
+    <nav aria-label="Main navigation">
+      <ul class="top-nav__list">
+        <li><a href="index.html" aria-current="page">Home</a></li>
+        <li><a href="animals.html">Animals</a></li>
+        <li><a href="map.html">Map</a></li>
+        <li><a href="kids.html">Kids</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <p id="connectivity" class="banner" role="status" hidden></p>
+
+    <section class="hero" aria-labelledby="hero-title">
+      <h1 id="hero-title">Helping Britain's wild animals come home</h1>
+      <p>Alder Brook Wildlife Centre rescues sick, injured and orphaned wildlife. We rehabilitate them and return them to the wild, or give a lifelong home to those who could not survive outside.</p>
+      <a class="button" href="animals.html">Meet our animals</a>
+    </section>
+
+    <section class="card-grid" aria-labelledby="explore-title">
+      <h2 id="explore-title">Explore</h2>
+      <a class="card" href="animals.html">
+        <h3>Our animals</h3>
+        <p>Learn about the British species in our care.</p>
+      </a>
+      <a class="card" href="map.html">
+        <h3>Find them on the map</h3>
+        <p>See where each animal lives and how far you are from it.</p>
+      </a>
+      <a class="card" href="kids.html">
+        <h3>Tips for young helpers</h3>
+        <p>Simple ways to help wildlife in your garden and park.</p>
+      </a>
+    </section>
+
+    <section class="favourites-summary" aria-live="polite" id="favourites-summary" hidden>
+      <h2>Your favourites</h2>
+      <p id="favourites-count"></p>
+      <a href="favourites.html">View saved animals</a>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; Alder Brook Wildlife Centre</p>
+    <p id="install-slot"></p>
+  </footer>
+
+  <nav class="bottom-nav" aria-label="Main navigation">
+    <ul class="bottom-nav__list">
+      <li><a href="index.html" aria-current="page"><span aria-hidden="true">🏠</span>Home</a></li>
+      <li><a href="animals.html"><span aria-hidden="true">🦔</span>Animals</a></li>
+      <li><a href="map.html"><span aria-hidden="true">🗺️</span>Map</a></li>
+      <li><a href="kids.html"><span aria-hidden="true">⭐</span>Kids</a></li>
+    </ul>
+  </nav>
+
+  <script src="app.js" defer></script>
+</body>
+</html>

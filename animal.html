@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#2f6b3f" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#14291b" media="(prefers-color-scheme: dark)">
+  <link rel="manifest" href="manifest.json">
+  <link rel="icon" href="icons/icon-192.png" sizes="192x192">
+  <title>Animal | Alder Brook Wildlife Centre</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="animal">
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="top-nav" role="banner">
+    <a class="brand" href="index.html">Alder Brook</a>
+    <nav aria-label="Main navigation">
+      <ul class="top-nav__list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="animals.html" aria-current="page">Animals</a></li>
+        <li><a href="map.html">Map</a></li>
+        <li><a href="kids.html">Kids</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <p id="connectivity" class="banner" role="status" hidden></p>
+    <nav aria-label="Breadcrumb" class="breadcrumb">
+      <a class="text-link" href="animals.html">← All animals</a>
+      <span aria-hidden="true"> / </span>
+      <span id="crumb-name" aria-current="page">Animal</span>
+    </nav>
+    <div id="animal-detail">
+      <p class="empty">Loading…</p>
+    </div>
+  </main>
+
+  <footer class="site-footer"><p id="install-slot"></p></footer>
+
+  <nav class="bottom-nav" aria-label="Main navigation">
+    <ul class="bottom-nav__list">
+      <li><a href="index.html"><span aria-hidden="true">🏠</span>Home</a></li>
+      <li><a href="animals.html" aria-current="page"><span aria-hidden="true">🦔</span>Animals</a></li>
+      <li><a href="map.html"><span aria-hidden="true">🗺️</span>Map</a></li>
+      <li><a href="kids.html"><span aria-hidden="true">⭐</span>Kids</a></li>
+    </ul>
+  </nav>
+
+  <script src="app.js" defer></script>
+</body>
+</html>

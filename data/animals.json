@@ -1,0 +1,138 @@
+{
+  "updated": "2026-10-22",
+  "note": "Species facts verified against each animal's source link. Locations are where each animal can be seen; map coordinates are the centre of each postcode. Photos are from Wikimedia Commons, credited in each animal's credit field.",
+  "animals": [
+    {
+      "id": "hedgehog",
+      "name": "European Hedgehog",
+      "latin": "Erinaceus europaeus",
+      "summary": "A nocturnal insect-eater that roams gardens, hedgerows and woodland edges at night. Numbers have fallen by more than 25% over the last decade, and possibly by as much as 40%.",
+      "habitat": "Gardens, hedgerows, woodland edges",
+      "image": "images/hedgehog.jpg",
+      "alt": "A European hedgehog among grass and autumn leaves",
+      "status": "Declining",
+      "source": "https://bto.org/science/monitoring/hedgehogs",
+      "location": {
+        "lat": 53.0548,
+        "lng": -2.1333,
+        "zone": "22 Baddeley Hall Rd, Stoke-on-Trent ST2 7JZ"
+      },
+      "credit": {
+        "author": "Jörg Hempel",
+        "license": "CC BY-SA 2.0 de",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/de/deed.en",
+        "source": "https://commons.wikimedia.org/wiki/File:Erinaceus_europaeus_LC0119.jpg"
+      }
+    },
+    {
+      "id": "red-squirrel",
+      "name": "Red Squirrel",
+      "latin": "Sciurus vulgaris",
+      "summary": "Britain's native squirrel, which feeds mainly on pine seeds and buries food in autumn for winter. Red squirrels have declined more than almost any other UK mammal, with about 287,000 left in Britain.",
+      "habitat": "Coniferous, broadleaved and mixed woodland",
+      "image": "images/red-squirrel.jpg",
+      "alt": "A red squirrel eating on a tree stump",
+      "status": "Declining",
+      "source": "https://woodlandtrust.org.uk/trees-woods-and-wildlife/animals/mammals/red-squirrel",
+      "location": {
+        "lat": 54.276,
+        "lng": -2.2634,
+        "zone": "Snaizeholme Rd, Hawes DL8 3NB"
+      },
+      "credit": {
+        "author": "Peter Trimming",
+        "license": "CC BY 2.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Squirrel_posing.jpg"
+      }
+    },
+    {
+      "id": "barn-owl",
+      "name": "Barn Owl",
+      "latin": "Tyto alba",
+      "summary": "A pale owl with a heart-shaped face and white underparts, often seen perched on fence posts or flying low over fields at dusk. It declined through the 20th century, partly because of pesticides such as DDT.",
+      "habitat": "Farmland and rough grassland",
+      "image": "images/barn-owl.jpg",
+      "alt": "A barn owl perched on a wooden post",
+      "status": "Least concern in the UK",
+      "source": "https://www.rspb.org.uk/birds-and-wildlife/barn-owl",
+      "location": {
+        "lat": 53.0088,
+        "lng": -2.2239,
+        "zone": "The Owl Let's Bar, 15 London Rd, Newcastle-under-Lyme ST5 1LQ"
+      },
+      "credit": {
+        "author": "Steven Ward",
+        "license": "CC BY 2.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Barn_Owl,_Lancashire.jpg"
+      }
+    },
+    {
+      "id": "otter",
+      "name": "Eurasian Otter",
+      "latin": "Lutra lutra",
+      "summary": "A river mammal that hunts mostly at night, eating fish, waterbirds and amphibians. Once in serious decline, otters have recovered well as waterways have become cleaner.",
+      "habitat": "Healthy rivers, wetlands and coasts",
+      "image": "images/otter.jpg",
+      "alt": "A Eurasian otter resting on a mossy rock",
+      "status": "Near threatened (IUCN)",
+      "source": "https://www.mcsuk.org/30species/eurasian-otter",
+      "location": {
+        "lat": 53.6227,
+        "lng": -2.865,
+        "zone": "Burscough, Ormskirk L40 0TA"
+      },
+      "credit": {
+        "author": "Bernard Landgraf",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+        "source": "https://commons.wikimedia.org/wiki/File:Fischotter,_Lutra_Lutra.JPG"
+      }
+    },
+    {
+      "id": "badger",
+      "name": "European Badger",
+      "latin": "Meles meles",
+      "summary": "An omnivore that lives in large family groups in underground burrows called setts. It can eat several hundred earthworms in a night, and is one of the few predators of hedgehogs.",
+      "habitat": "Grassland, farmland, woodland and urban areas",
+      "image": "images/badger.jpg",
+      "alt": "A European badger at the edge of a woodland pool",
+      "status": "Least concern",
+      "source": "https://kentwildlifetrust.org.uk/wildlife-explorer/mammals/european-badger",
+      "location": {
+        "lat": 53.1402,
+        "lng": -2.502,
+        "zone": "Cross Ln, Church Minshull, Nantwich CW5 6DY"
+      },
+      "credit": {
+        "author": "Charles J. Sharp",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:European_badger_(Meles_meles_taxus)_Drenthe.jpg"
+      }
+    },
+    {
+      "id": "kingfisher",
+      "name": "Kingfisher",
+      "latin": "Alcedo atthis",
+      "summary": "A small, bright blue and orange bird that flies fast and low over the water and dives for fish from riverside perches. Its feathers contain no blue pigment: the colour comes from the way their tiny structures scatter light. Kingfishers are vulnerable to hard winters and polluted rivers.",
+      "habitat": "Slow-moving or still water: rivers, canals and lakes",
+      "image": "images/kingfisher.jpg",
+      "alt": "A male kingfisher perched on a mossy stump",
+      "status": "Green-listed in the UK",
+      "source": "https://www.rspb.org.uk/birds-and-wildlife/kingfisher",
+      "location": {
+        "lat": 53.5379,
+        "lng": -2.0094,
+        "zone": "Chew Valley Rd, Greenfield, Oldham OL3 7AE"
+      },
+      "credit": {
+        "author": "Tony Wood",
+        "license": "CC BY 2.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Alcedo_atthis_-England-8_(cropped).jpg"
+      }
+    }
+  ]
+}
