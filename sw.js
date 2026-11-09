@@ -1,4 +1,4 @@
-const CACHE_VERSION = "alder-brook-v10";
+const CACHE_VERSION = "alder-brook-v11";
 const APP_SHELL = [
   "./",
   "index.html",
@@ -45,6 +45,23 @@ self.addEventListener("fetch", (event) => {
           return res;
         })
         .catch(() => caches.match(event.request))
+    );
+    return;
+  }
+
+  // Animal photos: cache first, keeping a copy of each one viewed so it works offline.
+  if (url.origin === self.location.origin && url.pathname.includes("/images/")) {
+    event.respondWith(
+      caches.match(event.request).then((cached) =>
+        cached ||
+        fetch(event.request).then((res) => {
+          if (res.ok) {
+            const copy = res.clone();
+            caches.open(CACHE_VERSION).then((c) => c.put(event.request, copy));
+          }
+          return res;
+        })
+      )
     );
     return;
   }
