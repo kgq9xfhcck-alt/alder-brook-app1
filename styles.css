@@ -172,6 +172,9 @@ main {
 
 .card p { margin: 0; color: var(--color-muted); }
 
+/* Hold the space while animal cards load, so the footer does not jump (layout shift). */
+.animal-grid[aria-busy="true"] { min-height: 100vh; }
+
 .conservation { margin-bottom: 2rem; }
 .conservation > p { max-width: 60ch; }
 

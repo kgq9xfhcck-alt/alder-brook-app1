@@ -1,4 +1,4 @@
-const CACHE_VERSION = "alder-brook-v11";
+const CACHE_VERSION = "alder-brook-v12";
 const APP_SHELL = [
   "./",
   "index.html",

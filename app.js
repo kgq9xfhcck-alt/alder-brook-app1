@@ -273,6 +273,7 @@
     const grid = document.getElementById("animal-grid");
     if (!grid) return;
     const animals = await loadAnimals();
+    grid.removeAttribute("aria-busy");
 
     if (!animals.length) {
       grid.replaceChildren(emptyMessage("We could not load the animals just now. Please try again later."));
@@ -286,6 +287,7 @@
     const container = document.getElementById("favourites-list");
     if (!container) return;
     const animals = await loadAnimals();
+    container.removeAttribute("aria-busy");
 
     const draw = () => {
       const saved = animals.filter((a) => isFavourite(a.id));
