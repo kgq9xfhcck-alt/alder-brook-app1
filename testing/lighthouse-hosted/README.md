@@ -5,8 +5,8 @@ Run on 2026-11-09 with Lighthouse 12.8.2 against https://kgq9xfhcck-alt.github.i
 | Page | Performance | Accessibility | Best practices |
 |---|---|---|---|
 | animal.html?id=otter | 98 | 100 | 100 |
-| animals.html | 93 | 100 | 100 |
-| favourites.html | 93 | 100 | 100 |
-| index.html | 100 | 100 | 100 |
+| animals.html | 100 | 100 | 100 |
+| favourites.html | 99 | 100 | 100 |
+| index.html | 99 | 100 | 100 |
 | kids.html | 100 | 100 | 100 |
-| map.html | 99 | 100 | 100 |
+| map.html | 100 | 100 | 100 |
